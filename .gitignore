@@ -1,0 +1,62 @@
+# Arduino IDE
+*.hex
+*.eep
+*.elf
+*.map
+*.sym
+*.lss
+*.bin
+
+# Build directories
+build/
+.build/
+
+# Arduino IDE files
+*.ino.globals.h
+*.ino.cpp
+__vm/
+
+# VSCode Arduino extension
+.vscode/
+c_cpp_properties.json
+arduino.json
+
+# PlatformIO (if you switch later)
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Temporary files
+*~
+*.swp
+*.swo
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.old
+*.backup
+
+# Libraries (if you bundle them - optional)
+# Uncomment if you want to track libraries in repo
+# libraries/
+
+# Test artifacts
+*.log
+
+# Documentation builds (if you add Doxygen later)
+docs/html/
+docs/latex/
+
+# Hardware design files (if binary)
+*.fzz
+*.brd
+*.sch~
+
+# OS specific
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
