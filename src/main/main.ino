@@ -277,7 +277,7 @@ void handleProximity() {
       noTone(BUZZER_PIN);
     }
     
-    showSuccess();  //or setLED('G', true);
+    setLED('G', true);
     
     // Check if held long enough
     if (holdDuration >= PROX_HOLD_TIME) {
