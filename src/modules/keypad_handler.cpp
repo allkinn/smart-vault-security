@@ -1,8 +1,8 @@
-#include "keypad_handler.h"
-#include "display.h"
-#include "actuators.h"
-#include "pins.h"
-#include "constants.h"
+#include "../config/keypad_handler.h"
+#include "../config/display.h"
+#include "../config/actuators.h"
+#include "../config/pins.h"
+#include "../config/constants.h"
 #include <Keypad.h>
 
 const byte ROWS = 4;
