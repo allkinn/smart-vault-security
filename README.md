@@ -37,7 +37,7 @@ Successful completion of all stages unlocks servo mechanism.
 
 ### Power
 - USB (5V) for Arduino + logic
-- External 5-9V supply for servo (recommended)
+- External 5-9V supply for servo
 - Common ground between Arduino and external PSU
 
 ---
@@ -80,7 +80,7 @@ Install via Arduino IDE Library Manager:
 
 ### 1. Clone Repository
 ```bash
-git clone <your-repo-url>
+git clone allkinn/smart-vault-security
 cd smart-vault-security
 ```
 
@@ -244,35 +244,40 @@ Run I2C scanner sketch to find address
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 smart-vault-security/
-├── README.md                 # This file
+├── README.md                   # This file
 ├── .gitignore               
 ├── docs/
-│   ├── wiring-diagram.png   # TODO: Add wiring photo
-│   ├── pin-mapping.md       # Detailed pin reference
-│   └── demo-script.md       # Presentation talking points
+│   ├── wiring-diagram.png      # TODO: Add wiring photo
+│   ├── pin-mapping.md          # Detailed pin reference
+│   └── demo-script.md          # Presentation talking points
 ├── src/
 │   ├── main/
-│   │   └── main.ino         # Main firmware
+│   │   └── main.ino            # Main firmware
 │   ├── config/
-│   │   ├── pins.h           # Pin definitions
-│   │   └── constants.h      # Tunable parameters
+│   │   ├── pins.h              # Pin definitions
+│   │   └── constants.h         # Tunable parameters
 │   ├── modules/
-│   │   ├── display.h/cpp    # LCD functions
-│   │   ├── dotmatrix.h/cpp  # MAX7219 animations
-│   │   ├── sensors.h/cpp    # Sensor readings
-│   │   ├── actuators.h/cpp  # Servo, buzzer, LEDs
-│   │   └── keypad_handler.h/cpp # Password logic
+│   │   ├── display.h
+|   |   ├── display.cpp         # LCD functions
+│   │   ├── dotmatrix.h
+|   |   ├── dotmatrix.cpp       # MAX7219 animations
+│   │   ├── sensors.h
+|   |   ├── sensors.cpp         # Sensor readings
+│   │   ├── actuators.h
+|   |   ├── actuators.cpp       # Servo, buzzer, LEDs
+│   │   ├── keypad_handler.h
+|   |   └── keypad_handler.cpp  # Password logic
 │   └── tests/
 │       ├── test_keypad.ino
 │       ├── test_sensors.ino
 │       ├── test_display.ino
 │       └── test_dotmatrix.ino
 └── hardware/
-    └── bom.md               # Bill of materials
+    └── lom.md                  # List of materials
 ```
 
 ---
@@ -296,12 +301,12 @@ IDLE → PASSWORD → MOTION → MAGNETIC → PROXIMITY → UNLOCKED
 - [x] Pin optimization (20 pins max)
 - [x] State machine implementation
 - [x] Non-blocking timing (millis-based)
-- [ ] Component testing (run test sketches)
-- [ ] Sensor calibration
-- [ ] Physical wiring
-- [ ] Enclosure/mounting
-- [ ] Demo dry runs (5x minimum)
-- [ ] Backup plan (manual overrides)
+- [x] Component testing (run test sketches)
+- [x] Sensor calibration
+- [x] Physical wiring
+- [x] Enclosure/mounting
+- [x] Demo dry runs (5x minimum)
+- [x] Backup plan (manual overrides)
 
 ---
 
@@ -326,7 +331,7 @@ If sensor fails during demo:
 
 ---
 
-## 📊 Component Cost Estimate
+## 📊 Component Quantity
 
 | Item | Qty |
 |------|-----|
@@ -378,7 +383,7 @@ Feel free to modify and extend.
 
 - Arduino community for libraries
 - Instructor for component provision
-- Coffee for making this possible in 40 hours
+- Coffee for making this possible
 
 ---
 
@@ -391,10 +396,4 @@ Feel free to modify and extend.
 4. Check constants.h calibration values
 5. Search error messages + library name online
 
-**Emergency contact:** [Your contact info]
-
 ---
-
-**Last updated:** 3 Dec 2024, 20:00 WITA  
-**Status:**  Firmware complete, ready for testing  
-**Next milestone:** Component testing by Day 2 morning
