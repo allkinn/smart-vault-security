@@ -29,5 +29,4 @@
 #define HALL_PIN A0
 
 // Output
-#define LED_GREEN 0  // D0, sacrifice Serial RX
 #define BUZZER_PIN 1  // D1, sacrifice Serial TX
