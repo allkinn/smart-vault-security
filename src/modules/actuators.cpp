@@ -26,14 +26,9 @@ void unlockVault() {
 }
 
 void setLED(char color, bool state) {
-  int pin;
-  switch(color) {
-    case 'R': pin = LED_RED; break;
-    case 'Y': pin = LED_YELLOW; break;
-    case 'G': pin = LED_GREEN; break;
-    default: return;
-  }
-  digitalWrite(pin, state ? HIGH : LOW);
+  #ifdef LED_GREEN  // Only if defined
+    if (color == 'G') digitalWrite(LED_GREEN, state);
+  #endif
 }
 
 void blinkLED(char color, int times, int delayMs) {
