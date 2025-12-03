@@ -26,7 +26,6 @@ Successful completion of all stages unlocks servo mechanism.
 - HC-SR04 ultrasonic sensor
 - PIR HC-SR501 motion sensor
 - Hall effect magnetic sensor
-- DHT11 (optional - not used in current config)
 
 ### Output Devices
 - LCD 16x2 with I2C module (address 0x27 or 0x3F)
@@ -76,7 +75,7 @@ Install via Arduino IDE Library Manager:
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone Repository
 ```bash
