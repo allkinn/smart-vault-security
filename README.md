@@ -80,7 +80,7 @@ Install via Arduino IDE Library Manager:
 
 ### 1. Clone Repository
 ```bash
-git clone https://allkinn/smart-vault-security.git
+git clone https://github.com/allkinn/smart-vault-security.git
 cd smart-vault-security
 ```
 
